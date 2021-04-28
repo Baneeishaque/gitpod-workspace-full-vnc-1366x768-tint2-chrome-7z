@@ -1,0 +1,14 @@
+image:
+  file: .gitpod.Dockerfile
+
+# tasks:
+  # - init: /usr/bin/start-vnc-session.sh
+  # - command: git clone --depth 1 "https://gitlab.com/baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-studio-gh-chrome-private.git" chrome-config && export CHROME_CONFIG_HOME="`pwd`/chrome-config" && google-chrome --disable-dev-shm-usage
+
+# Ports to expose on workspace startup
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: open-preview
+    
